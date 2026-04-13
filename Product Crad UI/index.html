@@ -1,63 +1,162 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI</title>
+    <title>Shopper's Street</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body
-    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-serif italic"
+    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-serif"
   >
-    <header>
-      <h1 class="text-6xl py-3">Shopper's Street</h1>
-      <h2 class="text-4xl py-3">Your Choice, Our Styles</h2>
-    </header>
-
-    <div
-      class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-md mx-6 my-6"
+    <!-- Toggle Button -->
+    <button
+      id="toggleBtn"
+      class="fixed top-5 right-5 text-2xl bg-gray-200 dark:bg-gray-700 p-3 rounded-full shadow"
     >
-      <h2 class="text-3xl text-center text-gray-800 dark:text-gray-300">
-        Gadgets
-      </h2>
-      <div class="flex items-center justify-center py-5">
-        <img
-          src="smart watch.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-        <img
-          src="smart watch 2.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-      </div>
+      🌙
+    </button>
 
-      <h2 class="text-3xl text-center text-gray-800 dark:text-gray-300">
-        Clothes
-      </h2>
-      <div class="flex items-center justify-center py-5">
-        <img
-          src="white hoodie.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-        <img
-          src="Green Hoodie.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-      </div>
+    <!-- Main Container -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 space-y-12">
+      <!-- Header -->
+      <header class="py-8">
+        <h1 class="text-5xl font-bold">Shopper's Street</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-2 text-lg">
+          Your Choice, Our Styles
+        </p>
+      </header>
 
-      <h2 class="text-3xl text-center text-gray-800 dark:text-gray-300">
-        Sneakers
-      </h2>
-      <div class="flex items-center justify-center py-5">
-        <img
-          src="Sneakers.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-        <img
-          src="blue sneakers.jfif"
-          class="w-40 h-40 object-cover px-5 transition duration-300 hover:scale-110 hover:shadow-xl"
-        />
-      </div>
+      <!-- Gadgets -->
+      <section>
+        <h2
+          class="text-2xl font-semibold mb-6 border-l-4 pl-3 border-gray-800 dark:border-gray-300"
+        >
+          Gadgets
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="smart watch.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">Smart Watch</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹2,999</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="smart watch 2.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">Smart Watch Pro</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹3,999</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clothes -->
+      <section>
+        <h2
+          class="text-2xl font-semibold mb-6 border-l-4 pl-3 border-gray-800 dark:border-gray-300"
+        >
+          Clothes
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="white hoodie.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">White Hoodie</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹1,499</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="Green Hoodie.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">Green Hoodie</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹1,599</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sneakers -->
+      <section>
+        <h2
+          class="text-2xl font-semibold mb-6 border-l-4 pl-3 border-gray-800 dark:border-gray-300"
+        >
+          Sneakers
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="Sneakers.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">Classic Sneakers</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹2,499</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div
+            class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="blue sneakers.jfif"
+              class="w-full h-44 object-cover rounded-lg"
+            />
+            <h3 class="mt-4 font-semibold">Blue Sneakers</h3>
+            <p class="text-gray-600 dark:text-gray-300">₹2,799</p>
+            <button
+              class="mt-3 w-full py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
